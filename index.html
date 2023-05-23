@@ -10,29 +10,38 @@
 </head>
 <body>
     <header>
-        <h1>Task list</h1>
-        <form action="" id="new-task-form">
-            <input type="text" name="" id="new-task-input" placeholder="What do you have planned?">
-            <input type="submit" value="Add task" id="new-task-submit" >
-        </form>
-    </header>
-
-    <main>
-        <section class="task-list">
-            <h2>Tasks</h2>
-            <div id="tasks">
-                <!-- <div class="task">
-                    <div class="content">
-                        <input type="text" class="text" value="My task" readonly>
-                    </div>
-                    <div class="actions">
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </div>
-                </div> -->
+        <nav>
+          <h1 class="navbar-heading">Task planner</h1>
+        </nav>
+      </header>
+    <div class="container">
+        <div class="block1">
+            <div class="todo-list">
+                <h2>Tasks</h2>
+                <div class="fill">
+                    <input keydown="addTask()" type="text" id="input-box" placeholder="Add your task here">
+                    <button onclick="addTask()">Add</button>
+                </div>
+                <ul id="list-container">
+                    <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li> -->
+                </ul>
             </div>
-        </section>
-    </main>
+        </div>
+        <div class="block2">
+            <div class="wrapper">
+                <div class="content">
+                    <p id="quote">                       </p>
+                    <h3 id="author"></h3>
+                    <button id="btn">Get quote</button>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <footer>
+        <p>Made by HACKINTOSH &#x2764;</p>
+      </footer>
     <script src="script.js"></script>
 </body>
 </html>
